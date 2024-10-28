@@ -1,38 +1,109 @@
+/* Оформлення для всього тіла сторінки */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Оформлення для контейнера App */
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Оформлення для шапки */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Оформлення для навігаційного меню */
+nav {
+  background-color: #333;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+nav ul li {
+  color: rgb(0, 0, 0); /* Змінюємо колір тексту на білий */
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+nav ul li:hover {
+  background-color: #ddd; /* Додаємо зміну фону при наведенні */
+  color: black; /* Текст стає чорним при наведенні */
+}
+
+/* Стилі для кнопок входу та виходу */
+nav button {
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+nav button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+nav button:hover {
+  background-color: #45a049;
+}
+
+/* Оформлення для основної частини сайту */
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Список продуктів */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+ul li input {
+  margin-right: 10px;
+}
+
+/* Оформлення для футера */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Оформлення для лічильника вибраних товарів */
+.selected-counter {
+  text-align: right;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #fff;
 }
